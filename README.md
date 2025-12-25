@@ -13,10 +13,27 @@ npm install github:zos-apps/textpad
 ## Usage
 
 ```tsx
-import ZTextPad from '@zos-apps/textpad';
+import App from '@zos-apps/textpad';
 
-function App() {
-  return <ZTextPad />;
+function MyApp() {
+  return <App />;
+}
+```
+
+## Package Spec
+
+App metadata is defined in `package.json` under the `zos` field:
+
+```json
+{
+  "zos": {
+    "id": "ai.hanzo.textpad",
+    "name": "TextPad",
+    "icon": "📄",
+    "category": "productivity",
+    "permissions": ["storage"],
+    "installable": true
+  }
 }
 ```
 
